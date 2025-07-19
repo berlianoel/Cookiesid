@@ -48,12 +48,14 @@ Example:
 ```
 
 ## Credits
+```
 Original  : farhaanaliii
+
 Modified  : berlin
+```
 
 
-
-⚠️ WARNING
+## ⚠️ WARNING
 
 This project is for educational and testing purposes only.
 
