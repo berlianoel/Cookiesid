@@ -32,7 +32,10 @@ cd Cookies
 ```
 pip install -r requirements.txt
 ```
-
+# Run the script
+```
+python main.py
+```
 
 # Format
 Save your UID and password in a file named idpw.txt using this format:
