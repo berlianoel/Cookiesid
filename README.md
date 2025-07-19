@@ -1,4 +1,5 @@
 # Please Read Before Using it
+This script is automates the process of logging into multiple user accounts using a list of credentials, and retrieves session data (cookies) for each.
 
 This script is a **modification** of the original project by [farhaanaliii/Cookies](https://github.com/farhaanaliii/Cookies).  
 It is intended **strictly for educational and testing purposes only**.  
