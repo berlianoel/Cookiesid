@@ -7,7 +7,7 @@ It is intended **strictly for educational and testing purposes only**.
 
 ---
 
-## 📦 dependencies 
+## Dependencies 
 
 Before running the script on **Termux**, install the required packages:
 
