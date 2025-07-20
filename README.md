@@ -56,7 +56,9 @@ the cookies.txt will generate in there
 
 to go there you can use this tools :
 mobile : http://bit.ly/3UjREVo
+
 windows : you should know
+
 linux : you should know 
 
 
