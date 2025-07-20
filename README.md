@@ -2,7 +2,7 @@
 This script is automates the process of logging into multiple user accounts using a list of credentials, and retrieves session data (cookies) for each.
 
 This script is a **modification** of the original project by [farhaanaliii/Cookies](https://github.com/farhaanaliii/Cookies).  
-It is intended **strictly for educational and testing purposes only**.  
+It is intended **strictly for testing purposes only**.  
 **Do not sell or redistribute**. This script is open-source and **FREE**.
 
 ---
@@ -51,9 +51,9 @@ Example:
 
 ```
 ## Where i can change idpw.txt?
-The idpw.txt file is in the directory home if you using termux.
+The **idpw.txt** file is in the directory home if you using **termux.**
 
-the cookies.txt will generate in there too
+the **cookies.txt** will generate in there too
 
 to go there you can use this tools :
 
@@ -79,7 +79,7 @@ This project is for educational and testing purposes only.
 
 Do not use it for illegal or unethical activities.
 
-Feel free to modified, and please put my name credit there.
+**Feel free to modified, and please put my name credit there.**
 
 Selling or repackaging this script in any form is strictly prohibited.
 
