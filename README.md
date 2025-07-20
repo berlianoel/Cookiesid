@@ -50,9 +50,10 @@ Example:
 600098765432109|examplepass321
 
 ```
+## Where i can change idpw.txt?
+The idpw.txt file is in the directory home if you using termux.
 
-The idpw.txt file is in the directory 
-the cookies.txt will generate in there
+the cookies.txt will generate in there too
 
 to go there you can use this tools :
 
