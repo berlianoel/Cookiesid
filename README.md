@@ -51,6 +51,16 @@ Example:
 
 ```
 
+The idpw.txt file is in the directory 
+the cookies.txt will generate in there
+
+to go there you can use this tools :
+mobile : https://sfile.mobi/bA40eZ1Lag7
+windows : you should know
+linux : you should know 
+
+
+
 ## Credits
 ```
 Original  : farhaanaliii
