@@ -67,9 +67,9 @@ linux : you should know
 
 ## Credits
 ```
-Original  : farhaanaliii
+Credit  : farhaanaliii
 
-Modified  : berlin
+Re-Code  : berlin
 ```
 
 
