@@ -46,7 +46,7 @@ uid3|pw3
 
 Example:
 
-600012345678901|mypassword123
+600012325678901|mypassword123
 600098765432109|examplepass321
 
 ```
