@@ -23,7 +23,7 @@ Follow The instructions!
 ## Clone the Repository
 
 ```
-git clone https://github.com/farhaanaliii/Cookies
+git clone https://github.com/berlianoel/Cookiesid
 cd Cookies
 ```
 
