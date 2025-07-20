@@ -79,6 +79,7 @@ This project is for educational and testing purposes only.
 
 Do not use it for illegal or unethical activities.
 
+Feel free to modified, and please put my name credit there.
 Selling or repackaging this script in any form is strictly prohibited.
 
 The author is not responsible for any misuse or damage caused.
