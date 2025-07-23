@@ -13,7 +13,11 @@ Before running the script on **Termux**, install the required packages:
 
 ```bash
 pkg update && pkg upgrade
+```
+```
 pkg install git
+```
+```
 pkg install python
 ```
 
@@ -24,6 +28,8 @@ Follow The instructions!
 
 ```
 git clone https://github.com/berlianoel/Cookiesid
+```
+```
 cd Cookies
 ```
 
