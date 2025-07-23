@@ -27,9 +27,9 @@ class FacebookCookieExtractor:
 ▐▙▄▞▘▐▙▄▄▖▐▌ ▐▌▐▙▄▄▖▗▄█▄▖▐▌  ▐▌▐▌  ▐▌
                                                                                                                                              
  {c['g']}Coded By Berlin{c['w']}
- ⚠️  Script ini bersifat gratis dan tidak untuk diperjualbelikan.
- 📂  Source: https://github.com/berlianoel/Cookiesid
- 📛  Tolong tidak disalah gunakan!
+  - Script ini bersifat gratis dan tidak untuk diperjualbelikan.
+  - Source: https://github.com/berlianoel/Cookiesid
+  - Tolong tidak disalah gunakan!
 {"-" * self.get_term_size()}
 """)
 
@@ -100,3 +100,5 @@ class FacebookCookieExtractor:
 if __name__ == "__main__":
     cookie_extractor = FacebookCookieExtractor()
     cookie_extractor.start("idpw.txt")
+
+#berlinn
